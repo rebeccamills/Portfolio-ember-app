@@ -12,16 +12,31 @@
   <script type="text/x-handlebars">
   <div class="nav">
     <ul>
-      <li>Home</li>
+      <li>
+      {{#link-to "home"}} Home {{/link-to}}
+      </li>
       <li>
         {{#link-to "portfolio"}} Portfolio {{/link-to}}
       </li>
-      <li>Blog</li>
+      <li>
+      {{#link-to "blog"}} Blog {{/link-to}}
+      </li>
+
     </ul>
   </div>
-    <h2>Welcome to Our Fist Ember App</h2>
+    <h2>Welcome to Our First Ember App</h2>
 
     {{outlet}}
+  </script>
+
+   <!-- Home page -->
+
+  <script type="text/x-handlebars" data-template-name="home">
+    <div class="home">
+      <h2>Welcome to Our Ember App</h2>
+    </div>
+
+ 
   </script>
 
 <!-- Portfolio Page -->
@@ -29,6 +44,16 @@
   <script type="text/x-handlebars" data-template-name="portfolio">
     <div class="portfolio">
       <h2>Welcome to Our Portfolio Page</h2>
+    </div>
+
+ 
+  </script>
+
+  <!-- Blog page -->
+
+  <script type="text/x-handlebars" data-template-name="blog">
+    <div class="blog">
+      <h2>Welcome to Our Blog</h2>
     </div>
 
  

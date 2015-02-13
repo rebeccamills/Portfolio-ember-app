@@ -2,3 +2,16 @@
 .ember-application {
     margin: 20px;
 }
+
+.portfolio {
+	background: red;
+}
+
+li {
+	display: inline-block; 
+	background: yellow;
+}
+
+.nav {
+	background: yellow;
+}

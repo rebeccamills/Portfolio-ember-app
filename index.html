@@ -7,14 +7,29 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  
+  <!-- Layout template -->
   <script type="text/x-handlebars">
+  <div class="nav">
+    <ul>
+      <li>Home</li>
+      <li>
+        {{#link-to "portfolio"}} Portfolio {{/link-to}}
+      </li>
+      <li>Blog</li>
+    </ul>
+  </div>
     <h2>Welcome to Our Fist Ember App</h2>
 
     {{outlet}}
   </script>
 
+<!-- Portfolio Page -->
+
   <script type="text/x-handlebars" data-template-name="portfolio">
-    <h2>Welcome to Our Portfolio Page</h2>
+    <div class="portfolio">
+      <h2>Welcome to Our Portfolio Page</h2>
+    </div>
 
  
   </script>
